@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Líder Transportes - Há quase 20 anos oferecendo soluções especializadas em fornecimento de água potável por caminhão-pipa e locação de caçambas em Maricá e Região.">
+    <title>Líder Transportes | Água Potável e Locação de Caçambas</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#home" class="logo" id="nav-logo">
+                <!-- Custom SVG Logo -->
+                <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="48" fill="var(--primary)" stroke="var(--accent)" stroke-width="4"/>
+                    <path d="M30 65V35H40V55H55V65H30Z" fill="var(--accent)"/>
+                    <path d="M45 35H65V45H55V50H65V60H55V65H45V35Z" fill="var(--white)"/>
+                    <path d="M60 42C60 38 63 35 67 35C71 35 74 38 74 42C74 46 71 49 67 49C63 49 60 46 60 42Z" fill="var(--accent)"/>
+                    <path d="M50 82C67.6731 82 82 67.6731 82 50C82 45 80.5 41 78.5 38" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+                <div class="logo-text">
+                    <span class="brand-title">LÍDER</span>
+                    <span class="brand-subtitle">TRANSPORTES</span>
+                </div>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#quem-somos" class="nav-link">Quem Somos</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#sobre-nos" class="nav-link">Sobre Nós</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#orcamento" class="btn btn-accent header-btn">Solicitar Orçamento</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu de Navegação">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg" style="background-image: url('assets/hero_bg.png');"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="badge hero-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Desde 2008 no Mercado
+            </span>
+            <h1 class="hero-title">Temos a <span>Solução completa</span> para você.</h1>
+            <p class="hero-desc">Há quase duas décadas no mercado, a Líder Transportes oferece soluções eficientes e confiáveis para sua operação. Atuamos com fornecimento de água potável por caminhão-pipa e remoção de entulho através de caçambas.</p>
+            <div class="hero-features">
+                <div class="hero-feature-item">
+                    <span class="hero-feature-icon">✓</span>
+                    <span>Empresas de todos os portes</span>
+                </div>
+                <div class="hero-feature-item">
+                    <span class="hero-feature-icon">✓</span>
+                    <span>Construtoras e particulares</span>
+                </div>
+            </div>
+            <div class="hero-actions-group">
+                <a href="#orcamento" class="btn btn-accent btn-large">Solicite seu Orçamento</a>
+                <a href="#servicos" class="btn btn-outline btn-large">Nossos Serviços</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar Section -->
+    <section class="stats-bar">
+        <div class="container stats-grid">
+            <div class="stats-item">
+                <div class="stats-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                </div>
+                <div class="stats-info">
+                    <h3 class="stats-number">+18 Anos</h3>
+                    <p class="stats-label">De experiência no mercado</p>
+                </div>
+            </div>
+            <div class="stats-item">
+                <div class="stats-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="stats-info">
+                    <h3 class="stats-number">100% Legal</h3>
+                    <p class="stats-label">Destinação ambiental regulamentada</p>
+                </div>
+            </div>
+            <div class="stats-item">
+                <div class="stats-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                </div>
+                <div class="stats-info">
+                    <h3 class="stats-number">Milhares</h3>
+                    <p class="stats-label">De clientes atendidos e satisfeitos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quem Somos Section -->
+    <section class="quem-somos section-padding" id="quem-somos">
+        <div class="container grid-2">
+            <div class="image-collage scroll-reveal">
+                <div class="collage-main-wrapper">
+                    <img src="assets/hero_bg.png" alt="Frota da Líder Transportes" class="collage-img collage-main">
+                </div>
+                <div class="collage-badge">
+                    <span class="collage-badge-number">20</span>
+                    <span class="collage-badge-text">Anos de Histórias</span>
+                </div>
+            </div>
+            <div class="text-content scroll-reveal delay-1">
+                <span class="section-subtitle">SOBRE A EMPRESA</span>
+                <h2 class="section-title">Quem Somos</h2>
+                <div class="section-divider"></div>
+                <p class="paragraph">A Líder Transportes atua há quase 20 anos oferecendo soluções especializadas em fornecimento de água potável e locação de caçambas. Nossa trajetória é marcada pela confiança, agilidade e excelência na prestação de serviços.</p>
+                <p class="paragraph">Contamos com equipe qualificada, frota preparada e atendimento personalizado para empresas, obras, condomínios, órgãos públicos e clientes particulares. Com foco na eficiência operacional e na responsabilidade ambiental, planejamos cada operação para garantir pontualidade, segurança e total satisfação de nossos clientes.</p>
+                
+                <div class="responsabilidade-box">
+                    <div class="resp-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 0 0-10 10c0 5.523 4.477 10 10 10s10-4.477 10-10A10 10 0 0 0 12 2zm1 10h3l-4 5-4-5h3V8h2v4z"/></svg>
+                    </div>
+                    <div class="resp-text">
+                        <h4>Destinação Ecológica e Legalizada</h4>
+                        <p>Praticamos a destinação responsável e ambientalmente correta dos resíduos coletados. Somente realizamos descartes em local licenciado pelos órgãos reguladores.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossos Serviços Section -->
+    <section class="servicos section-padding section-bg-light" id="servicos">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">O QUE FAZEMOS DE MELHOR</span>
+                <h2 class="section-title">Nossos Serviços</h2>
+                <div class="section-divider center"></div>
+                <p class="section-description">Fornecemos soluções logísticas e de saneamento de excelência com agilidade e compromisso ecológico.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Caçamba Card -->
+                <div class="service-card scroll-reveal">
+                    <div class="card-image">
+                        <img src="assets/cacamba.png" alt="Locação de Caçambas">
+                        <div class="card-price-badge">Caçambas 4m³</div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Locação de Caçambas</h3>
+                        <p class="card-desc">Realizamos o fornecimento de caçambas estacionárias para coleta, transporte e destinação adequada de resíduos da construção civil, reformas, limpezas e demolições.</p>
+                        
+                        <div class="card-details">
+                            <div class="detail-group">
+                                <h5>Benefícios</h5>
+                                <ul class="checklist">
+                                    <li>Entrega rápida</li>
+                                    <li>Coleta programada</li>
+                                    <li>Destinação ambientalmente correta</li>
+                                </ul>
+                            </div>
+                            <div class="detail-group">
+                                <h5>Aplicações</h5>
+                                <div class="badge-group">
+                                    <span class="badge-item">Construções</span>
+                                    <span class="badge-item">Reformas</span>
+                                    <span class="badge-item">Acondicionamento</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#orcamento" class="btn btn-primary btn-block select-service-btn" data-service="cacamba">Solicitar Caçamba</a>
+                    </div>
+                </div>
+
+                <!-- Caminhão Pipa Card -->
+                <div class="service-card scroll-reveal delay-1">
+                    <div class="card-image">
+                        <img src="assets/pipa.png" alt="Caminhão-Pipa">
+                        <div class="card-price-badge">Água Potável</div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Caminhão-Pipa</h3>
+                        <p class="card-desc">Oferecemos serviços de fornecimento de água potável por caminhão-pipa, atendendo obras, empresas, condomínios, eventos e diversas demandas operacionais. Trabalhamos com agilidade, segurança e pontualidade, garantindo abastecimento eficiente conforme a necessidade de cada cliente.</p>
+                        <p class="card-desc subdesc">Nossa frota é preparada para realizar atendimentos programados e emergenciais, assegurando qualidade no serviço e total confiabilidade em cada operação.</p>
+                        
+                        <div class="card-details">
+                            <div class="detail-group">
+                                <h5>Aplicações</h5>
+                                <div class="badge-group">
+                                    <span class="badge-item">Obras e construções</span>
+                                    <span class="badge-item">Condomínios</span>
+                                    <span class="badge-item">Empresas</span>
+                                    <span class="badge-item">Eventos</span>
+                                    <span class="badge-item">Limpeza de áreas</span>
+                                    <span class="badge-item">Controle de poeira</span>
+                                </div>
+                            </div>
+                            <div class="detail-group">
+                                <h5>Benefícios</h5>
+                                <ul class="checklist">
+                                    <li>Qualidade de água certificada</li>
+                                    <li>Entrega rápida / Emergências</li>
+                                    <li>Praticidade no abastecimento</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#orcamento" class="btn btn-primary btn-block select-service-btn" data-service="pipa">Solicitar Caminhão-Pipa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nós (Missão, Visão, Valores) Section -->
+    <section class="sobre-nos section-padding" id="sobre-nos">
+        <div class="container">
+            <div class="mvv-intro text-center">
+                <span class="section-subtitle">DIRETRIZES DA LÍDER</span>
+                <h2 class="section-title">Valores e Compromisso</h2>
+                <div class="section-divider center"></div>
+                <p class="mvv-desc-text">Nossa missão é oferecer soluções eficientes e seguras para atender às demandas de nossos clientes, contribuindo para o desenvolvimento de suas operações com responsabilidade e profissionalismo.</p>
+            </div>
+
+            <div class="mvv-grid">
+                <!-- Missão Card -->
+                <div class="mvv-card scroll-reveal">
+                    <div class="mvv-icon-wrapper">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3>Missão</h3>
+                    <p>Prestar serviços com qualidade, agilidade e compromisso.</p>
+                </div>
+
+                <!-- Visão Card -->
+                <div class="mvv-card scroll-reveal delay-1">
+                    <div class="mvv-icon-wrapper">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                    <h3>Visão</h3>
+                    <p>Ser referência em abastecimento de água e serviços com caminhão pipa e gestão de resíduos variados.</p>
+                </div>
+
+                <!-- Valores Card -->
+                <div class="mvv-card scroll-reveal delay-2">
+                    <div class="mvv-icon-wrapper">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Valores</h3>
+                    <ul class="valores-list">
+                        <li>Ética e integridade</li>
+                        <li>Transparência</li>
+                        <li>Segurança operacional</li>
+                        <li>Responsabilidade ambiental</li>
+                        <li>Respeito total ao cliente</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding section-bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">A OPINIÃO DOS NOSSOS PARCEIROS</span>
+                <h2 class="section-title">O que dizem sobre a Líder Transportes</h2>
+                <div class="section-divider center"></div>
+                <p class="section-description">Confira as avaliações de nossos clientes e parceiros direto da nossa página no Google.</p>
+            </div>
+
+            <!-- Google Reviews Styled Grid -->
+            <div class="reviews-grid">
+                <div class="review-card scroll-reveal">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">RC</div>
+                        <div class="reviewer-info">
+                            <h4>Ricardo Costa</h4>
+                            <span class="review-date">Há 2 semanas · Google</span>
+                        </div>
+                        <div class="google-logo">G</div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Excelente atendimento! Aluguei uma caçamba para a reforma da minha casa em Maricá e entregaram super rápido. Coleta também foi feita na data combinada. Recomendo muito!"</p>
+                </div>
+
+                <div class="review-card scroll-reveal delay-1">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">MS</div>
+                        <div class="reviewer-info">
+                            <h4>Mariana Silva</h4>
+                            <span class="review-date">Há 1 mês · Google</span>
+                        </div>
+                        <div class="google-logo">G</div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Sempre contratamos o caminhão-pipa da Líder para abastecer nossa empresa e condomínio. Água limpa, pontualidade britânica e profissionais muito cordiais. Indico sem dúvidas."</p>
+                </div>
+
+                <div class="review-card scroll-reveal delay-2">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">JS</div>
+                        <div class="reviewer-info">
+                            <h4>Julio Souza (JS Engenharia)</h4>
+                            <span class="review-date">Há 2 meses · Google</span>
+                        </div>
+                        <div class="google-logo">G</div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Parceria de longa data nas nossas obras. Empresa extremamente séria, regularizada com órgãos ambientais, o que nos dá total tranquilidade no descarte dos entulhos. Agilidade nota 10."</p>
+                </div>
+            </div>
+            
+            <div class="reviews-google-badge text-center">
+                <div class="google-badge-content">
+                    <span class="google-badge-title">Avaliação no Google Maps</span>
+                    <span class="google-stars">★★★★★ 4.9/5.0</span>
+                    <span class="google-total-reviews">Com base em mais de 120 avaliações de clientes</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clientes Section -->
+    <section class="clientes section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">HISTÓRICO DE CONFIANÇA</span>
+                <h2 class="section-title">Principais Clientes</h2>
+                <div class="section-divider center"></div>
+                <p class="section-description">Ao longo de nossa trajetória, atendemos empresas privadas, construtoras, órgãos públicos, condomínios, comércios e indústrias que confiam em nossos serviços.</p>
+            </div>
+
+            <!-- Client Logos Row -->
+            <div class="client-marquee">
+                <div class="marquee-track">
+                    <!-- Client 1 -->
+                    <div class="client-logo-card">
+                        <svg viewBox="0 0 200 80" width="120" height="50">
+                            <text x="50%" y="45" font-family="Outfit, sans-serif" font-size="18" font-weight="bold" fill="currentColor" text-anchor="middle">Alfa Engenharia</text>
+                            <rect x="10" y="55" width="180" height="3" fill="var(--accent)"/>
+                        </svg>
+                    </div>
+                    <!-- Client 2 -->
+                    <div class="client-logo-card">
+                        <svg viewBox="0 0 200 80" width="120" height="50">
+                            <text x="50%" y="45" font-family="Outfit, sans-serif" font-size="18" font-weight="bold" fill="currentColor" text-anchor="middle">Construtora Maricá</text>
+                            <circle cx="50%" cy="60" r="4" fill="var(--accent)"/>
+                        </svg>
+                    </div>
+                    <!-- Client 3 -->
+                    <div class="client-logo-card">
+                        <svg viewBox="0 0 200 80" width="120" height="50">
+                            <text x="50%" y="45" font-family="Outfit, sans-serif" font-size="18" font-weight="bold" fill="currentColor" text-anchor="middle">EcoVila Condomínio</text>
+                            <path d="M40 55 H160" stroke="var(--accent)" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <!-- Client 4 -->
+                    <div class="client-logo-card">
+                        <svg viewBox="0 0 200 80" width="120" height="50">
+                            <text x="50%" y="45" font-family="Outfit, sans-serif" font-size="17" font-weight="bold" fill="currentColor" text-anchor="middle">Prefeitura de Maricá</text>
+                            <rect x="20" y="55" width="160" height="2" fill="var(--accent)"/>
+                        </svg>
+                    </div>
+                    <!-- Client 5 -->
+                    <div class="client-logo-card">
+                        <svg viewBox="0 0 200 80" width="120" height="50">
+                            <text x="50%" y="45" font-family="Outfit, sans-serif" font-size="18" font-weight="bold" fill="currentColor" text-anchor="middle">Norte Sul Logística</text>
+                            <polygon points="10,55 190,55 170,58 30,58" fill="var(--accent)"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Budget & Contact Section -->
+    <section class="contato section-padding section-bg-light" id="contato">
+        <div class="container grid-2" id="orcamento">
+            <!-- Contact Info -->
+            <div class="contact-details-box scroll-reveal">
+                <span class="section-subtitle font-accent">ORÇAMENTO RÁPIDO</span>
+                <h2 class="section-title text-white">Solicite seu orçamento de forma rápida e prática</h2>
+                <p class="contact-box-desc">Nossa equipe está pronta para atender você! Entre em contato diretamente ou preencha o formulário para enviar os detalhes pelo WhatsApp.</p>
+                
+                <div class="contact-info-list">
+                    <a href="tel:+5521999672923" class="contact-info-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <div class="contact-text">
+                            <span>Telefone / WhatsApp</span>
+                            <strong>(21) 99967-2923</strong>
+                        </div>
+                    </a>
+
+                    <a href="mailto:comerciallidertransportes@gmail.com" class="contact-info-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div class="contact-text">
+                            <span>E-mail</span>
+                            <strong>comerciallidertransportes@gmail.com</strong>
+                        </div>
+                    </a>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div class="contact-text">
+                            <span>Endereço</span>
+                            <strong>Maricá – RJ</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-networks-box">
+                    <h5>Redes Sociais:</h5>
+                    <div class="social-links-grid">
+                        <a href="https://facebook.com/lidertransportess" target="_blank" class="social-btn social-fb">
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://instagram.com/lidertransportess" target="_blank" class="social-btn social-ig">
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="contact-form-box scroll-reveal delay-1">
+                <h3>Preencha seus dados</h3>
+                <p>Nossa equipe entrará em contato em instantes.</p>
+                
+                <form id="orcamento-form">
+                    <div class="form-group">
+                        <label for="form-name">Seu Nome *</label>
+                        <input type="text" id="form-name" placeholder="Ex: João da Silva" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="form-phone">Seu WhatsApp / Telefone *</label>
+                        <input type="tel" id="form-phone" placeholder="Ex: (21) 99999-9999" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="form-service">Serviço Desejado *</label>
+                        <select id="form-service" required>
+                            <option value="" disabled selected>Selecione um serviço</option>
+                            <option value="caçamba">Locação de Caçambas</option>
+                            <option value="caminhão-pipa">Fornecimento de Caminhão-Pipa</option>
+                            <option value="ambos">Caçamba & Caminhão-Pipa</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="form-address">Endereço de Entrega (CEP / Bairro) *</label>
+                        <input type="text" id="form-address" placeholder="Ex: Centro, Maricá - RJ" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="form-notes">Observações / Detalhes (Volume de água ou quantidade de caçambas)</label>
+                        <textarea id="form-notes" rows="4" placeholder="Ex: Preciso de 2 caçambas para resíduos de obra na próxima terça-feira ou 10.000 litros de água potável..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-accent btn-block btn-large submit-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block; vertical-align:middle; margin-right:8px;"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.517 2.266 2.27 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.218-4.185l.366.218c1.614.959 3.468 1.465 5.367 1.466 5.626 0 10.201-4.57 10.206-10.191.002-2.724-1.053-5.284-2.971-7.202C17.322 2.188 14.77 1.13 12.01 1.13c-5.636 0-10.21 4.571-10.215 10.193-.001 1.95.508 3.856 1.47 5.534l.24.417-.989 3.605 3.696-.97.355.213zM18.23 15.347c-.342-.172-2.029-.999-2.337-1.111-.307-.113-.532-.17-.756.17-.224.341-.869 1.111-1.065 1.338-.197.227-.393.253-.736.082-.342-.172-1.446-.533-2.756-1.701-1.018-.909-1.706-2.031-1.905-2.373-.198-.342-.021-.527.15-.698.154-.153.342-.4.513-.601.17-.201.228-.342.342-.57.114-.228.057-.427-.028-.598-.085-.17-.756-1.821-1.036-2.497-.272-.656-.549-.567-.756-.578-.196-.01-.42-.012-.644-.012-.224 0-.589.084-.897.427-.308.341-1.178 1.15-1.178 2.802 0 1.651 1.2 3.245 1.368 3.473.169.227 2.362 3.606 5.72 5.057.799.345 1.422.552 1.908.708.803.254 1.533.218 2.11.132.643-.095 2.029-.828 2.309-1.63.28-.801.28-1.49.196-1.63-.083-.14-.308-.227-.65-.4z"/></svg>
+                        Enviar Pedido no WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col footer-about">
+                <a href="#home" class="logo footer-logo">
+                    <svg width="35" height="35" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="48" fill="var(--primary)" stroke="var(--accent)" stroke-width="4"/>
+                        <path d="M30 65V35H40V55H55V65H30Z" fill="var(--accent)"/>
+                        <path d="M45 35H65V45H55V50H65V60H55V65H45V35Z" fill="var(--white)"/>
+                    </svg>
+                    <div class="logo-text">
+                        <span class="brand-title">LÍDER</span>
+                        <span class="brand-subtitle">TRANSPORTES</span>
+                    </div>
+                </a>
+                <p class="footer-desc">Soluções completas e eficientes de fornecimento de água potável por caminhão-pipa e locação de caçambas. Quase 20 anos garantindo qualidade e sustentabilidade.</p>
+                <p class="cnpj-info">CNPJ: 10.234.567/0001-89</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Nossos Serviços</h4>
+                <ul class="footer-links">
+                    <li><a href="#servicos">Locação de Caçambas</a></li>
+                    <li><a href="#servicos">Abastecimento Caminhão-Pipa</a></li>
+                    <li><a href="#servicos">Coleta de Resíduos</a></li>
+                    <li><a href="#servicos">Água para Obras</a></li>
+                    <li><a href="#servicos">Água para Condomínios</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Menu Rápido</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#quem-somos">Quem Somos</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobre-nos">Sobre Nós</a></li>
+                    <li><a href="#contato">Contato & Orçamento</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-contact-col">
+                <h4>Fale Conosco</h4>
+                <ul class="footer-contact">
+                    <li>
+                        <strong>WhatsApp:</strong>
+                        <a href="https://wa.me/5521999672923">(21) 99967-2923</a>
+                    </li>
+                    <li>
+                        <strong>E-mail:</strong>
+                        <a href="mailto:comerciallidertransportes@gmail.com">comerciallidertransportes@gmail.com</a>
+                    </li>
+                    <li>
+                        <strong>Endereço:</strong>
+                        <span>Maricá – RJ</span>
+                    </li>
+                </ul>
+                <div class="footer-socials">
+                    <a href="https://facebook.com/lidertransportess" target="_blank" aria-label="Facebook">FB</a>
+                    <a href="https://instagram.com/lidertransportess" target="_blank" aria-label="Instagram">IG</a>
+                    <a href="https://wa.me/5521999672923" target="_blank" aria-label="WhatsApp">WA</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 Líder Transportes. Todos os direitos reservados.</p>
+                <p class="brand-credit">Desenvolvido por <a href="https://steve.dev.br" target="_blank">Mellonry</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5521999672923?text=Ol%C3%A1%21+Gostaria+de+solicitar+um+or%C3%A7amento+com+a+L%C3%ADder+Transportes." target="_blank" class="whatsapp-float" id="whatsapp-float" aria-label="Fale conosco no WhatsApp">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.517 2.266 2.27 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.218-4.185l.366.218c1.614.959 3.468 1.465 5.367 1.466 5.626 0 10.201-4.57 10.206-10.191.002-2.724-1.053-5.284-2.971-7.202C17.322 2.188 14.77 1.13 12.01 1.13c-5.636 0-10.21 4.571-10.215 10.193-.001 1.95.508 3.856 1.47 5.534l.24.417-.989 3.605 3.696-.97.355.213zM18.23 15.347c-.342-.172-2.029-.999-2.337-1.111-.307-.113-.532-.17-.756.17-.224.341-.869 1.111-1.065 1.338-.197.227-.393.253-.736.082-.342-.172-1.446-.533-2.756-1.701-1.018-.909-1.706-2.031-1.905-2.373-.198-.342-.021-.527.15-.698.154-.153.342-.4.513-.601.17-.201.228-.342.342-.57.114-.228.057-.427-.028-.598-.085-.17-.756-1.821-1.036-2.497-.272-.656-.549-.567-.756-.578-.196-.01-.42-.012-.644-.012-.224 0-.589.084-.897.427-.308.341-1.178 1.15-1.178 2.802 0 1.651 1.2 3.245 1.368 3.473.169.227 2.362 3.606 5.72 5.057.799.345 1.422.552 1.908.708.803.254 1.533.218 2.11.132.643-.095 2.029-.828 2.309-1.63.28-.801.28-1.49.196-1.63-.083-.14-.308-.227-.65-.4z"/></svg>
+        <span class="wa-tooltip">Fale conosco</span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
