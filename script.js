@@ -125,49 +125,60 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /* ==========================================
-       INTERACTIVE BUDGET WHATSAPP REDIRECTION
+       BUDGET FORM SUBMISSION (WEB3FORMS)
        ========================================== */
     const orcamentoForm = document.getElementById('orcamento-form');
+    const formMessage = document.getElementById('form-message');
     
     if (orcamentoForm) {
-        orcamentoForm.addEventListener('submit', (e) => {
+        const submitBtn = orcamentoForm.querySelector('button[type="submit"]');
+        
+        orcamentoForm.addEventListener('submit', async (e) => {
             e.preventDefault();
             
-            // Fetch inputs
-            const name = document.getElementById('form-name').value.trim();
-            const phone = document.getElementById('form-phone').value.trim();
-            const service = document.getElementById('form-service').value;
-            const address = document.getElementById('form-address').value.trim();
-            const notes = document.getElementById('form-notes').value.trim();
-            
-            // Format WhatsApp Message
-            let formattedService = '';
-            if (service === 'caçamba') {
-                formattedService = 'Locação de Caçambas';
-            } else if (service === 'caminhão-pipa') {
-                formattedService = 'Fornecimento de Caminhão-Pipa';
-            } else if (service === 'ambos') {
-                formattedService = 'Caçamba e Caminhão-Pipa';
+            // Clear previous messages
+            if (formMessage) {
+                formMessage.className = 'form-message';
+                formMessage.style.display = 'none';
+                formMessage.textContent = '';
             }
-            
-            const message = `Olá Líder Transportes! Gostaria de solicitar um orçamento:\n\n` +
-                            `👤 *Nome:* ${name}\n` +
-                            `📞 *WhatsApp:* ${phone}\n` +
-                            `🛠️ *Serviço:* ${formattedService}\n` +
-                            `📍 *Endereço/CEP:* ${address}\n` +
-                            (notes ? `📝 *Detalhes:* ${notes}` : '');
-            
-            // Encode text for URL
-            const encodedText = encodeURIComponent(message);
-            
-            // Líder Transportes WhatsApp Number
-            const whatsappNumber = '5521999672923';
-            
-            // Final link
-            const waUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodedText}`;
-            
-            // Open WhatsApp in a new tab
-            window.open(waUrl, '_blank');
+
+            const originalHTML = submitBtn.innerHTML;
+            submitBtn.innerHTML = 'Enviando...';
+            submitBtn.disabled = true;
+
+            const formData = new FormData(orcamentoForm);
+
+            try {
+                const response = await fetch("https://api.web3forms.com/submit", {
+                    method: "POST",
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    if (formMessage) {
+                        formMessage.textContent = "Sucesso! Seu pedido de orçamento foi enviado com sucesso. Entraremos em contato em breve.";
+                        formMessage.classList.add('success');
+                    }
+                    orcamentoForm.reset();
+                } else {
+                    if (formMessage) {
+                        formMessage.textContent = "Erro ao enviar: " + (data.message || "Por favor, tente novamente.");
+                        formMessage.classList.add('error');
+                    }
+                }
+
+            } catch (error) {
+                if (formMessage) {
+                    formMessage.textContent = "Algo deu errado. Por favor, verifique sua conexão e tente novamente.";
+                    formMessage.classList.add('error');
+                }
+            } finally {
+                submitBtn.innerHTML = originalHTML;
+                submitBtn.disabled = false;
+            }
         });
     }
 });

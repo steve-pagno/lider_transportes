@@ -3,10 +3,10 @@
    ========================================== */
 :root {
     /* Color Palette */
-    --primary: #121214;
-    --primary-dark: #0C0C0D;
-    --primary-light: #1E1E21;
-    --primary-translucent: rgba(18, 18, 20, 0.85);
+    --primary: #0A2540;
+    --primary-dark: #06182C;
+    --primary-light: #153C64;
+    --primary-translucent: rgba(10, 37, 64, 0.85);
     
     --accent: #E52E2E;
     --accent-hover: #C51D1D;
@@ -15,7 +15,7 @@
     --white: #ffffff;
     --black: #0f172a;
     
-    --bg-light: #F4F4F6;
+    --bg-light: #F4F6F9;
     --bg-white: #ffffff;
     
     --text-dark: #1E293B;
@@ -230,7 +230,7 @@ img {
 .btn-primary:hover {
     background-color: var(--primary-light);
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(18, 18, 20, 0.3);
+    box-shadow: 0 8px 20px rgba(10, 37, 64, 0.3);
 }
 
 .btn-outline {
@@ -254,7 +254,7 @@ img {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(18, 18, 20, 0.92);
+    background-color: rgba(10, 37, 64, 0.92);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -282,7 +282,7 @@ img {
 }
 
 .logo-img {
-    height: 40px;
+    height: 70px;
     width: auto;
     object-fit: contain;
     display: block;
@@ -412,7 +412,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(12, 12, 13, 0.95) 0%, rgba(18, 18, 20, 0.85) 50%, rgba(12, 12, 13, 0.65) 100%);
+    background: linear-gradient(135deg, rgba(6, 24, 44, 0.95) 0%, rgba(10, 37, 64, 0.85) 50%, rgba(6, 24, 44, 0.65) 100%);
     z-index: 2;
 }
 
@@ -1215,19 +1215,44 @@ img {
 .form-group textarea:focus {
     border-color: var(--primary-light);
     background-color: var(--white);
-    box-shadow: 0 0 0 3px rgba(18, 18, 20, 0.08);
+    box-shadow: 0 0 0 3px rgba(10, 37, 64, 0.08);
 }
 
 .submit-btn {
-    background-color: #25D366; /* WhatsApp Green */
+    background-color: var(--accent);
     color: var(--white);
     border: none;
 }
 
 .submit-btn:hover {
-    background-color: #20BA5A;
-    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+    background-color: var(--accent-hover);
+    box-shadow: 0 8px 20px rgba(229, 46, 46, 0.4);
     transform: translateY(-2px);
+}
+
+.form-message {
+    display: none;
+    margin-top: 16px;
+    padding: 14px;
+    border-radius: var(--border-radius-sm);
+    font-size: 0.925rem;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 500;
+}
+
+.form-message.success {
+    display: block;
+    background-color: rgba(34, 197, 94, 0.15);
+    border: 1px solid rgba(34, 197, 94, 0.25);
+    color: #166534;
+}
+
+.form-message.error {
+    display: block;
+    background-color: rgba(229, 46, 46, 0.15);
+    border: 1px solid rgba(229, 46, 46, 0.25);
+    color: #A31D1D;
 }
 
 /* ==========================================
@@ -1345,7 +1370,7 @@ img {
 }
 
 .footer-bottom {
-    background-color: rgba(12, 12, 13, 0.8);
+    background-color: rgba(6, 24, 44, 0.8);
     padding: 24px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.03);
 }
